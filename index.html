@@ -33,68 +33,56 @@
 		}
 	</style>
 </head>
-	<ul>
-  <li>
-    <img src="odessa_logo.png" alt="Odessa logo" class="logo">
-    <button class="play-button" data-src="https://stream.laut.fm/odessa" data-station="Odessa">Play</button>
-  </li>
-  <li>
-    <img src="nachtyachtfm_logo.png" alt="NachtYachtFM logo" class="logo">
-    <button class="play-button" data-src="https://stream.laut.fm/nachtyachtfm" data-station="NachtYachtFM">Play</button>
-  </li>
-  <li>
-    <img src="arpexfm_logo.png" alt="ArpexFM logo" class="logo">
-    <button class="play-button" data-src="https://stream.laut.fm/arpexfm" data-station="ArpexFM">Play</button>
-  </li>
-  <li>
-    <img src="tumbleweedsfm_logo.png" alt="TumbleweedsFM logo" class="logo">
-    <button class="play-button" data-src="https://stream.laut.fm/tumbleweedsfm" data-station="TumbleweedsFM">Play</button>
-  </li>
-  <li>
-    <img src="bluesbrothersfm_logo.png" alt="BluesBrothersFM logo" class="logo">
-    <button class="play-button" data-src="https://stream.laut.fm/bluesbrothersfm" data-station="BluesBrothersFM">Play</button>
-  </li>
-  <li>
-    <img src="atomicwavefm_logo.png" alt="AtomicWaveFM logo" class="logo">
-    <button class="play-button" data-src="https://stream.laut.fm/atomicwavefm" data-station="AtomicWaveFM">Play</button>
-  </li>
-</ul>
-<button class="stop-button" style="display:none">Stop</button>
-<div id="now-playing"></div>
 
 <body>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Odessa Radio Stations</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
 	<div class="container">
-		<div class="channel">
-			<h3>Odessa</h3>
-			<audio id="odessa-audio" src="https://stream.laut.fm/odessa"></audio>
-			<button onclick="document.getElementById('odessa-audio').play()">Play</button>
+		<div class="sidebar">
+			<h2>Odessa Radio Stations</h2>
+			<div class="channels">
+				<div class="channel">
+					<img src="https://www.laut.fm/_gfx/logos/medium/odessa.png">
+					<button class="play" onclick="playRadio('https://stream.laut.fm/odessa')">Play</button>
+				</div>
+				<div class="channel">
+					<img src="https://www.laut.fm/_gfx/logos/medium/nachtyachtfm.png">
+					<button class="play" onclick="playRadio('https://stream.laut.fm/nachtyachtfm')">Play</button>
+				</div>
+				<div class="channel">
+					<img src="https://www.laut.fm/_gfx/logos/medium/arpex.png">
+					<button class="play" onclick="playRadio('https://stream.laut.fm/arpexfm')">Play</button>
+				</div>
+				<div class="channel">
+					<img src="https://www.laut.fm/_gfx/logos/medium/tumbleweeds.png">
+					<button class="play" onclick="playRadio('https://stream.laut.fm/tumbleweedsfm')">Play</button>
+				</div>
+				<div class="channel">
+					<img src="https://www.laut.fm/_gfx/logos/medium/bluesbrothers.png">
+					<button class="play" onclick="playRadio('https://stream.laut.fm/bluesbrothersfm')">Play</button>
+				</div>
+				<div class="channel">
+					<img src="https://www.laut.fm/_gfx/logos/medium/atomicwave.png">
+					<button class="play" onclick="playRadio('https://stream.laut.fm/atomicwavefm')">Play</button>
+				</div>
+			</div>
+			<button class="stop" onclick="stopRadio()">Stop</button>
+			<div id="nowPlaying"></div>
+			<div id="played"></div>
 		</div>
-		<div class="channel">
-			<h3>NachtYachtFM</h3>
-			<audio id="nachtyacht-audio" src="https://stream.laut.fm/nachtyachtfm"></audio>
-			<button onclick="document.getElementById('nachtyacht-audio').play()">Play</button>
-		</div>
-		<div class="channel">
-			<h3>ArpexFM</h3>
-			<audio id="arpex-audio" src="https://stream.laut.fm/arpexfm"></audio>
-			<button onclick="document.getElementById('arpex-audio').play()">Play</button>
-		</div>
-		<div class="channel">
-			<h3>TumbleweedsFM</h3>
-			<audio id="tumbleweeds-audio" src="https://stream.laut.fm/tumbleweedsfm"></audio>
-			<button onclick="document.getElementById('tumbleweeds-audio').play()">Play</button>
-		</div>
-		<div class="channel">
-			<h3>BluesBrothersFM</h3>
-			<audio id="bluesbrothers-audio" src="https://stream.laut.fm/bluesbrothersfm"></audio>
-			<button onclick="document.getElementById('bluesbrothers-audio').play()">Play</button>
-		</div>
-		<div class="channel">
-			<h3>AtomicWaveFM</h3>
-			<audio id="atomicwave-audio" src="https://stream.laut.fm/atomicwavefm"></audio>
-			<button onclick="document.getElementById('atomicwave-audio').play()">Play</button>
+		<div class="main">
+			<h2>About Us</h2>
+			<p>Odessa is a radio station platform made with love for several styles of music.</p>
 		</div>
 	</div>
+	<script src="script.js"></script>
 </body>
-</html>
+</html
 
