@@ -3,41 +3,56 @@
 <head>
 	<title>Odessa Radio Stations</title>
 	<style>
-  		body {
-    		background-color: #F5F5F5;
-            display: flex;
-            flex-direction: row;
-  		}
-      .main-content {
-            flex: 1;
-            padding: 20px;
-      }
-      .sidebar {
-            width: 200px;
-            background-color: #D3D3D3;
-            padding: 20px;
-      }
-      .link-block {
-            margin-bottom: 10px;
-            background-color: #FFF;
-            padding: 10px;
-      }
+		body {
+			background-color: #F5F5F5;
+			display: flex;
+			flex-direction: row;
+			font-family: Verdana, sans-serif;
+		}
+		.main-content {
+			flex: 1;
+			padding: 20px;
+		}
+		.sidebar {
+			width: 200px;
+			background-color: #D3D3D3;
+			padding: 20px;
+		}
+		.link-block {
+			margin-bottom: 10px;
+			background-color: #FFF;
+			padding: 10px;
+			flex: 1;
+			margin-right: 10px;
+			box-sizing: border-box;
+		}
+		.link-row {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+		}
 	</style>
 </head>
 <body>
-    <div class="main-content">
-        <h1>ODESSA</h1>
-        <div class="link-block"><a href="https://laut.fm/odessa">Odessa</a></div>
-        <div class="link-block"><a href="https://laut.fm/nachtyachtfm">NachtYachtFM</a></div>
-        <div class="link-block"><a href="https://laut.fm/arpexfm">ArpexFM</a></div>
-        <div class="link-block"><a href="https://laut.fm/tumbleweedsfm">TumbleweedsFM</a></div>
-        <div class="link-block"><a href="https://laut.fm/bluesbrothersfm">BluesBrothersFM</a></div>
-        <div class="link-block"><a href="https://laut.fm/atomicwavefm">AtomicWaveFM</a></div>
-    </div>
-    <div class="sidebar">
-        <h2>About Us</h2>
-        <p>Odessa is a radio station platform made with love for several styles of music.</p>
-    </div>
+	<div class="main-content">
+		<h1>Choose A Channel</h1>
+		<div class="link-row">
+			<div class="link-block"><a href="https://laut.fm/odessa">Odessa</a></div>
+			<div class="link-block"><a href="https://laut.fm/nachtyachtfm">NachtYachtFM</a></div>
+			<div class="link-block"><a href="https://laut.fm/arpexfm">ArpexFM</a></div>
+		</div>
+		<div class="link-row">
+			<div class="link-block"><a href="https://laut.fm/tumbleweedsfm">TumbleweedsFM</a></div>
+			<div class="link-block"><a href="https://laut.fm/bluesbrothersfm">BluesBrothersFM</a></div>
+			<div class="link-block"><a href="https://laut.fm/atomicwavefm">AtomicWaveFM</a></div>
+		</div>
+	</div>
+	<div class="sidebar">
+		<h2>About Us</h2>
+		<p>Odessa is a radio station platform made with love for several styles of music.</p>
+	</div>
 </body>
 </html>
+
 
