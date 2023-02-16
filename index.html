@@ -9,33 +9,33 @@
         margin: 0;
         padding: 0;
       }
-      body {
-        background-color: #92AAC7;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .main-content {
-        flex: 1;
-        padding: 20px;
-      }
-      .container {
-        margin: 0 auto;
-        text-align: center;
-        max-width: 50%; /* set max-width instead of width */
-      }
-      .widget-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-      .widget {
-        margin: 10px;
-      }
-      .widget-row {
-        margin-top: 20px;
-      }
+     body {
+  background-color: #92AAC7;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.widget-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.widget {
+  margin: 10px;
+}
+
     </style>
   </head>
   <body>
@@ -44,12 +44,13 @@
     </header>
     
     <div class="widget-container">
-      <div class="widget"><iframe width="300" height="190" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/odessa,?player%5Bstations%5D=odessa&player%5Bcolor%5D%5Bcolor%5D=black&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%23E2DFA2&player%5Bcolor%5D%5Bbackground_from%5D=%23E2DFA2&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23363636&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px"></iframe></div>
-      <div class="widget"><iframe width="300" height="190" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/nachtyachtfm?player%5Bstations%5D=nachtyachtfm&player%5Bcolor%5D%5Bcolor%5D=black&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%2392AAC7&player%5Bcolor%5D%5Bbackground_from%5D=%2392AAC7&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23363636&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px"></iframe></div>
-      <div class="widget"><iframe width="300" height="190" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/bluesbrothersfm?player%5Bstations%5D=bluesbrothersfm&player%5Bcolor%5D%5Bcolor%5D=black&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%2392AAC7&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%2392AAC7&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23363636&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px"></iframe></div>
-      <div class="widget"><iframe width="250" height="185" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/arpexfm?player%5Bstations%5D=arpexfm&player%5Bcolor%5D%5Bcolor%5D=white&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%23E2DFA2&player%5Bcolor%5D%5Bbackground_from%5D=%23E2DFA2&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23333333&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px"></iframe></div>
-      <div class="widget"><iframe width="250" height="185" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/tumbleweedsfm?player%5Bstations%5D=tumbleweedsfm&player%5Bcolor%5D%5Bcolor%5D=black&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%23E2DFA2&player%5Bcolor%5D%5Bbackground_from%5D=%23E2DFA2&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23333333&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px"></iframe></div>
-      <div class="widget"><iframe width="250" height="185" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/atomicwavefm?player%5Bstations%5D=atomicwavefm&player%5Bcolor%5D%5Bcolor%5D=black&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%23E2DFA2&player%5Bcolor%5D%5Bbackground_from%5D=%23E2DFA2&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23333333&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px"></iframe></div>
+      <div class="widget"><iframe width="250" height="185" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/odessa?player%5Bstations%5D=odessa&player%5Bcolor%5D%5Bcolor%5D=black&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%2392AAC7&player%5Bcolor%5D%5Bbackground_from%5D=%23E2DFA2&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23333333&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px">widget</iframe></div>
+      <div class="widget"><iframe width="250" height="185" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/nachtyachtfm?player%5Bstations%5D=nachtyachtfm&player%5Bcolor%5D%5Bcolor%5D=black&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%2392AAC7&player%5Bcolor%5D%5Bbackground_from%5D=%23E2DFA2&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23333333&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px">widget</iframe></div>
+      <div class="widget"><iframe width="250" height="185" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/bluesbrothersfm?player%5Bstations%5D=bluesbrothersfm&player%5Bcolor%5D%5Bcolor%5D=black&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%2392AAC7&player%5Bcolor%5D%5Bbackground_from%5D=%23E2DFA2&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23333333&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px">widget</iframe></iframe></div>
+      <div class="widget"><iframe width="250" height="185" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/arpexfm?player%5Bstations%5D=arpexfm&player%5Bcolor%5D%5Bcolor%5D=black&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%2392AAC7&player%5Bcolor%5D%5Bbackground_from%5D=%23E2DFA2&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23333333&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px">widget</iframe></div>
+      <div class="widget"><iframe width="250" height="185" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/tumbleweedsfm?player%5Bstations%5D=tumbleweedsfm&player%5Bcolor%5D%5Bcolor%5D=black&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%2392AAC7&player%5Bcolor%5D%5Bbackground_from%5D=%23E2DFA2&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23333333&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px">widget</iframe></div>
+      <div class="widget"><iframe width="250" height="185" id="widget" name="widget" border="0" style="border:0px" allowtransparency="true" scrolling="no" src="//laut.fm/widgets/player_for/atomicwavefm?player%5Bstations%5D=atomicwavefm&player%5Bcolor%5D%5Bcolor%5D=black&player%5Bshadow%5D=false&player%5Bdisplay%5D%5Bborder%5D%5Bradius%5D=40px&player%5Bcolor%5D%5Bbackground_to%5D=%2392AAC7&player%5Bcolor%5D%5Bbackground_from%5D=%23E2DFA2&player%5Bborder%5D%5Bcolor%5D=%23000000&player%5Bborder%5D%5Bwidth%5D=3px&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_to%5D=%23ED5752&player%5Bbutton%5D%5Bcolor%5D%5Bbackground_from%5D=%23ED5752&player%5Bbutton%5D%5Bborder%5D%5Bcolor%5D=%23333333&player%5Bbutton%5D%5Bborder%5D%5Bwidth%5D=2px">widget</iframe></div>
     </div>
   </body>
 </html>
+
